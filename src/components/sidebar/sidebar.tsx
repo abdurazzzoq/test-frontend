@@ -75,7 +75,7 @@ const Sidebar = () => {
 
 <button className='flex items-center gap-[10px]  pl-[24px] mt-[600px]' onClick={logout}>
           <BiLogOutCircle />
-          Chiqish
+          Logout
           </button>
         </div>
       </aside>

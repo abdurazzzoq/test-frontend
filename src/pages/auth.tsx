@@ -60,7 +60,7 @@ const Auth = () => {
         <Form className="space-y-4 px-[170px]">
           {error && <p className="text-red-500 font-semibold">{error}</p>}
           <h1 className="font-semibold text-center text-4xl">
-          {auth==='signin' ? 'Tizimga kirish' : "Ro'yhatdan o'tish"}
+          {auth==='signin' ? 'Sign In' : "Sign Up"}
           </h1>
           <div className="space-y-4">
             
@@ -81,31 +81,31 @@ const Auth = () => {
             {isLoading
               ? "Loading..."
               : auth === "signin"
-              ? "Kirish"
-              : "Ro'yhatdan o'tish"}
+              ? "Sign In"
+              : "Sign Up"}
           </button>
 
           
           {auth === "signin" ? (
           <div className=" text-[gray]">
-            Akkauntingiz yo'qmi?{" "}
+            Not yet account?{" "}
             <button
               type="button"
               className=" text-black hover:underline"
               onClick={() => toggleAuth("signup")}
             >
-              Ro'yhatdan o'tish
+             Sign Up
             </button>
           </div>
         ) : (
           <div className=" text-[gray]">
-           Akkauntingiz bormi?{" "}
+           Already have account?{" "}
             <button
               type="button"
               className=" text-black hover:underline"
               onClick={() => toggleAuth("signin")}
             >
-             Tizimga kirish
+             Sign In
             </button>
 
             
